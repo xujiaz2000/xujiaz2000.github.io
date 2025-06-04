@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="个人博客搭建与部署：Hugo + Stack + Github 本地搭建 github下载hugo_extended和stack，添加hugo.exe所在目录至环境变量（或者把hugo.exe复制到hugo-dev目录下）\n将stack放在theme目录下，用其exampleSite中的content和hugo.yaml替换hugo主目录中的content和hugo.toml\n删掉content/post中rich-content所有内容，修改配置中的baseURL为https://xujiaz2000.github.io/，并修改其他配置，修改content/page下的各个目录中index.md里的title为中文\n注：hugo主目录配置优先级高于theme目录下的配置（可参考theme下的文件放置位置在主目录配置）\n1 2 3 4 # hugo基本命令 hugo new site ./hugo-dev hugo server -D hugo new content post/HelloWorld/index.md Github部署 新建github仓库（Public，不要README）\n1 xujiaz2000.github.io 删除hugo-dev中的public，重新生成静态页面；进入public，推送远端\n1 2 3 4 5 6 7 8 hugo cd public git init git add . git commit -am &#34;first commit to build the blog&#34; git branch -M main # 强制更名当前分支为main git remote add origin https://github.com/xujiaz2000/xujiaz2000.github.io.git git push -u origin main # 推送并建立关联，之后只需git push xujiaz2000.github.io仓库 - Settings - Pages - Branch选择main后save\n">
-<title>BuildBlog</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="本地搭建 github下载hugo_extended和stack，添加hugo.exe所在目录至环境变量（或者把hugo.exe复制到hugo-dev目录下）\n将stack放在theme目录下，用其exampleSite中的content和hugo.yaml替换hugo主目录中的content和hugo.toml\n删掉content/post中rich-content所有内容，修改配置中的baseURL为https://xujiaz2000.github.io/，并修改其他配置，修改content/page下的各个目录中index.md里的title为中文\n注：hugo主目录配置优先级高于theme目录下的配置（可参考theme下的文件放置位置在主目录配置）\n1 2 3 4 # hugo基本命令 hugo new site ./hugo-dev hugo server -D hugo new content post/HelloWorld/index.md Github部署 新建github仓库（Public，不要README）\n1 xujiaz2000.github.io 删除hugo-dev中的public，重新生成静态页面；进入public，推送远端\n1 2 3 4 5 6 7 8 hugo cd public git init git add . git commit -am &#34;first commit to build the blog&#34; git branch -M main # 强制更名当前分支为main git remote add origin https://github.com/xujiaz2000/xujiaz2000.github.io.git git push -u origin main # 推送并建立关联，之后只需git push xujiaz2000.github.io仓库 - Settings - Pages - Branch选择main后save\n">
+<title>个人博客搭建与部署：Hugo &#43; Stack &#43; Github</title>
 
-<link rel='canonical' href='https://xujiaz2000.github.io/p/buildblog/'>
+<link rel='canonical' href='https://xujiaz2000.github.io/p/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%83%A8%E7%BD%B2hugo--stack--github/'>
 
-<link rel="stylesheet" href="/scss/style.min.946cca6c6259ef94ac55abfae7c7bf3291ea3ed5eea17ef77500b257217c6710.css"><meta property='og:title' content="BuildBlog">
-<meta property='og:description' content="个人博客搭建与部署：Hugo + Stack + Github 本地搭建 github下载hugo_extended和stack，添加hugo.exe所在目录至环境变量（或者把hugo.exe复制到hugo-dev目录下）\n将stack放在theme目录下，用其exampleSite中的content和hugo.yaml替换hugo主目录中的content和hugo.toml\n删掉content/post中rich-content所有内容，修改配置中的baseURL为https://xujiaz2000.github.io/，并修改其他配置，修改content/page下的各个目录中index.md里的title为中文\n注：hugo主目录配置优先级高于theme目录下的配置（可参考theme下的文件放置位置在主目录配置）\n1 2 3 4 # hugo基本命令 hugo new site ./hugo-dev hugo server -D hugo new content post/HelloWorld/index.md Github部署 新建github仓库（Public，不要README）\n1 xujiaz2000.github.io 删除hugo-dev中的public，重新生成静态页面；进入public，推送远端\n1 2 3 4 5 6 7 8 hugo cd public git init git add . git commit -am &#34;first commit to build the blog&#34; git branch -M main # 强制更名当前分支为main git remote add origin https://github.com/xujiaz2000/xujiaz2000.github.io.git git push -u origin main # 推送并建立关联，之后只需git push xujiaz2000.github.io仓库 - Settings - Pages - Branch选择main后save\n">
-<meta property='og:url' content='https://xujiaz2000.github.io/p/buildblog/'>
+<link rel="stylesheet" href="/scss/style.min.946cca6c6259ef94ac55abfae7c7bf3291ea3ed5eea17ef77500b257217c6710.css"><meta property='og:title' content="个人博客搭建与部署：Hugo + Stack + Github">
+<meta property='og:description' content="本地搭建 github下载hugo_extended和stack，添加hugo.exe所在目录至环境变量（或者把hugo.exe复制到hugo-dev目录下）\n将stack放在theme目录下，用其exampleSite中的content和hugo.yaml替换hugo主目录中的content和hugo.toml\n删掉content/post中rich-content所有内容，修改配置中的baseURL为https://xujiaz2000.github.io/，并修改其他配置，修改content/page下的各个目录中index.md里的title为中文\n注：hugo主目录配置优先级高于theme目录下的配置（可参考theme下的文件放置位置在主目录配置）\n1 2 3 4 # hugo基本命令 hugo new site ./hugo-dev hugo server -D hugo new content post/HelloWorld/index.md Github部署 新建github仓库（Public，不要README）\n1 xujiaz2000.github.io 删除hugo-dev中的public，重新生成静态页面；进入public，推送远端\n1 2 3 4 5 6 7 8 hugo cd public git init git add . git commit -am &#34;first commit to build the blog&#34; git branch -M main # 强制更名当前分支为main git remote add origin https://github.com/xujiaz2000/xujiaz2000.github.io.git git push -u origin main # 推送并建立关联，之后只需git push xujiaz2000.github.io仓库 - Settings - Pages - Branch选择main后save\n">
+<meta property='og:url' content='https://xujiaz2000.github.io/p/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%83%A8%E7%BD%B2hugo--stack--github/'>
 <meta property='og:site_name' content='SH&#39;s Blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-06-04T14:55:11&#43;08:00'/><meta property='article:modified_time' content='2025-06-04T14:55:11&#43;08:00'/>
-<meta name="twitter:title" content="BuildBlog">
-<meta name="twitter:description" content="个人博客搭建与部署：Hugo + Stack + Github 本地搭建 github下载hugo_extended和stack，添加hugo.exe所在目录至环境变量（或者把hugo.exe复制到hugo-dev目录下）\n将stack放在theme目录下，用其exampleSite中的content和hugo.yaml替换hugo主目录中的content和hugo.toml\n删掉content/post中rich-content所有内容，修改配置中的baseURL为https://xujiaz2000.github.io/，并修改其他配置，修改content/page下的各个目录中index.md里的title为中文\n注：hugo主目录配置优先级高于theme目录下的配置（可参考theme下的文件放置位置在主目录配置）\n1 2 3 4 # hugo基本命令 hugo new site ./hugo-dev hugo server -D hugo new content post/HelloWorld/index.md Github部署 新建github仓库（Public，不要README）\n1 xujiaz2000.github.io 删除hugo-dev中的public，重新生成静态页面；进入public，推送远端\n1 2 3 4 5 6 7 8 hugo cd public git init git add . git commit -am &#34;first commit to build the blog&#34; git branch -M main # 强制更名当前分支为main git remote add origin https://github.com/xujiaz2000/xujiaz2000.github.io.git git push -u origin main # 推送并建立关联，之后只需git push xujiaz2000.github.io仓库 - Settings - Pages - Branch选择main后save\n">
+<meta name="twitter:title" content="个人博客搭建与部署：Hugo + Stack + Github">
+<meta name="twitter:description" content="本地搭建 github下载hugo_extended和stack，添加hugo.exe所在目录至环境变量（或者把hugo.exe复制到hugo-dev目录下）\n将stack放在theme目录下，用其exampleSite中的content和hugo.yaml替换hugo主目录中的content和hugo.toml\n删掉content/post中rich-content所有内容，修改配置中的baseURL为https://xujiaz2000.github.io/，并修改其他配置，修改content/page下的各个目录中index.md里的title为中文\n注：hugo主目录配置优先级高于theme目录下的配置（可参考theme下的文件放置位置在主目录配置）\n1 2 3 4 # hugo基本命令 hugo new site ./hugo-dev hugo server -D hugo new content post/HelloWorld/index.md Github部署 新建github仓库（Public，不要README）\n1 xujiaz2000.github.io 删除hugo-dev中的public，重新生成静态页面；进入public，推送远端\n1 2 3 4 5 6 7 8 hugo cd public git init git add . git commit -am &#34;first commit to build the blog&#34; git branch -M main # 强制更名当前分支为main git remote add origin https://github.com/xujiaz2000/xujiaz2000.github.io.git git push -u origin main # 推送并建立关联，之后只需git push xujiaz2000.github.io仓库 - Settings - Pages - Branch选择main后save\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -247,13 +247,10 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#个人博客搭建与部署hugo--stack--github">个人博客搭建与部署：Hugo + Stack + Github</a>
-      <ol>
-        <li><a href="#本地搭建">本地搭建</a></li>
-        <li><a href="#github部署">Github部署</a></li>
-        <li><a href="#github自动部署">Github自动部署</a></li>
-      </ol>
-    </li>
+    <li><a href="#本地搭建">本地搭建</a></li>
+    <li><a href="#github部署">Github部署</a></li>
+    <li><a href="#github自动部署">Github自动部署</a></li>
+    <li><a href="#绑定域名">绑定域名</a></li>
     <li><a href="#ref">Ref</a></li>
   </ol>
 </nav>
@@ -274,7 +271,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/buildblog/">BuildBlog</a>
+            <a href="/p/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%83%A8%E7%BD%B2hugo--stack--github/">个人博客搭建与部署：Hugo &#43; Stack &#43; Github</a>
         </h2>
     
         
@@ -312,9 +309,8 @@
     <section class="article-content">
     
     
-    <h2 id="个人博客搭建与部署hugo--stack--github">个人博客搭建与部署：Hugo + Stack + Github
-</h2><h3 id="本地搭建">本地搭建
-</h3><p>github下载hugo_extended和stack，添加hugo.exe所在目录至环境变量（或者把hugo.exe复制到hugo-dev目录下）</p>
+    <h2 id="本地搭建">本地搭建
+</h2><p>github下载hugo_extended和stack，添加hugo.exe所在目录至环境变量（或者把hugo.exe复制到hugo-dev目录下）</p>
 <p>将stack放在theme目录下，用其exampleSite中的content和hugo.yaml替换hugo主目录中的content和hugo.toml</p>
 <p>删掉content/post中<del>rich-content</del>所有内容，修改配置中的baseURL为https://xujiaz2000.github.io/，并修改其他配置，修改content/page下的各个目录中index.md里的title为中文</p>
 <p>注：hugo主目录配置优先级高于theme目录下的配置（可参考theme下的文件放置位置在主目录配置）</p>
@@ -332,8 +328,8 @@
 </span></span><span class="line"><span class="cl">hugo new content post/HelloWorld/index.md
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="github部署">Github部署
-</h3><p>新建github仓库（Public，不要README）</p>
+</div><h2 id="github部署">Github部署
+</h2><p>新建github仓库（Public，不要README）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -366,8 +362,8 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>xujiaz2000.github.io仓库 - Settings - Pages - Branch选择main后save</p>
-<h3 id="github自动部署">Github自动部署
-</h3><p>新建github仓库（Private，不要README）</p>
+<h2 id="github自动部署">Github自动部署
+</h2><p>新建github仓库（Private，不要README）</p>
 <p>在hugo-dev主目录新建.gitignore并添加</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -503,6 +499,30 @@
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git add .
 </span></span><span class="line"><span class="cl">git commit -am <span class="s2">&#34;update&#34;</span>
 </span></span><span class="line"><span class="cl">git push
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="绑定域名">绑定域名
+</h2><p>华为云 -&gt; 域名注册 -&gt; 使用指南</p>
+<p>搜索域名注册 -&gt; 网站解析 -&gt; 管理解析 -&gt; 添加记录集</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">记录类型：CNAME
+</span></span><span class="line"><span class="cl">主机记录：www / 空
+</span></span><span class="line"><span class="cl">记录值：xujiaz2000.github.io
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>github.io仓库 -&gt; Setting -&gt; Pages -&gt; Custom domain</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">shccc.top
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="ref">Ref
